@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "lint:eslint": "eslint './**/*.{js,ts,tsx}'",
+    "lint:prettier": "prettier --check .",
+    "lint": "run-s lint:eslint lint:prettier",
+    "format:eslint": "yarn lint:eslint --fix",
+    "format:prettier": "prettier --write .",
+    "format": "run-s format:eslint format:prettier"
+  },
+  "volta": {
+    "node": "14.16.0"
+  }
+}

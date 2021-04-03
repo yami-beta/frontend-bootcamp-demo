@@ -1,0 +1,33 @@
+{
+  "name": "tutorial-01",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "yami-beta",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf lib/",
+    "dev:ts": "tsc --watch",
+    "build:ts": "tsc",
+    "dev": "run-p dev:*",
+    "build": "run-s clean build:*",
+    "start": "node lib/index.js"
+  },
+  "private": true,
+  "devDependencies": {
+    "@types/node": "^14.14.37",
+    "@typescript-eslint/eslint-plugin": "^4.15.2",
+    "@typescript-eslint/parser": "^4.15.2",
+    "eslint": "^7.20.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.2.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.1.5"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.11",
+    "express": "^4.17.1"
+  }
+}
