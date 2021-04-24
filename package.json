@@ -12,6 +12,6 @@
     "format": "run-s format:eslint format:prettier"
   },
   "volta": {
-    "node": "14.16.0"
+    "node": "14.16.1"
   }
 }
