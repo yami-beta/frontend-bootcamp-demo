@@ -5,7 +5,7 @@
   "author": "yami-beta",
   "main": "index.js",
   "scripts": {
-    "lint:eslint": "eslint .",
+    "lint:eslint": "eslint './**/*.{js,ts,tsx}'",
     "lint:prettier": "prettier --check .",
     "lint": "run-s lint:eslint lint:prettier",
     "format:eslint": "eslint --fix .",
@@ -13,8 +13,8 @@
     "format": "run-s format:eslint format:prettier",
     "build:ts": "webpack --mode production",
     "watch:ts": "webpack-dev-server --mode development",
-    "build": "run-p build:*",
-    "watch": "run-p watch:*"
+    "build": "run-p 'build:*'",
+    "watch": "run-p 'watch:*'"
   },
   "devDependencies": {
     "@types/webpack": "^4.41.27",

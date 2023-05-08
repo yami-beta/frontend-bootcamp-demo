@@ -3,15 +3,8 @@
   "workspaces": [
     "packages/*"
   ],
-  "scripts": {
-    "lint:eslint": "eslint './**/*.{js,ts,tsx}'",
-    "lint:prettier": "prettier --check .",
-    "lint": "run-s lint:eslint lint:prettier",
-    "format:eslint": "yarn lint:eslint --fix",
-    "format:prettier": "prettier --write .",
-    "format": "run-s format:eslint format:prettier"
-  },
   "volta": {
-    "node": "14.16.1"
-  }
+    "node": "18.16.0"
+  },
+  "packageManager": "yarn@3.5.1"
 }
